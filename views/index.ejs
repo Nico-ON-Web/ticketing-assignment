@@ -15,9 +15,9 @@
     <!-- FORMULAIRE -->
     <section class="sectionForm flex column align-center">
 
-        <div class="large-60 flex justify-center gap-12">
+        <form class="large-60 flex justify-center gap-12" action="/demande" method="POST">
             <p>Je suis </p>
-            <form action="/demande" method="POST">
+          
             <input type="text" id="inputTxt" name="name">
             <p>et j'ai un besoin en </p>
             <select name="type" id="inpiutSelect">
@@ -26,10 +26,10 @@
                 <option value="html">HTML</option>
                 <option value="css">CSS</option>
             </select>
-        </div>
+       
 
         <button type="submit">Envoyer</button>
-        </form>
+          </form>
     </section>
 
     <!-- EN ATTENTE -->
