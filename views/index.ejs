@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Au secours! </h1>
+
+    <!-- FORMULAIRE -->
+    <section class="sectionForm flex column align-center">
+
+        <div class="large-60 flex justify-center gap-12">
+            <p>Je suis </p>
+            <form action="/demande" method="POST">
+            <input type="text" id="inputTxt" name="name">
+            <p>et j'ai un besoin en </p>
+            <select name="type" id="inpiutSelect">
+                <option value="">--choisir une option--</option>
+                <option value="JS">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+        </div>
+
+        <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- EN ATTENTE -->
+    <section>
+
+        <h2>En attente</h2>
+
+        <ul>
+          <% demandes.forEach(function(demande) { %>
+  <li><%= demande.name %></li>
+<% }) %>
+        </ul>
+    </section>
+
+</body>
+
+</html>

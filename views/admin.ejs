@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="refresh" content="30">
+</head>
+
+<body>
+<section>
+  <h2>Liste d'attente</h2>
+
+  <% demandes.forEach(demande => { %>
+
+    <div style="margin-bottom:20px">
+    <ul>
+
+    <li>
+      <strong>
+        <%= demande.name %>
+      </strong>
+
+      -
+      <%= demande.type %>
+
+      <% if (!demande.vu) { %>
+
+        <form
+          action="/aide/<%= demande.id %>"
+          method="POST"
+        >
+
+          <button>
+            Pris en charge
+          </button>
+
+        </form>
+
+      <% } else { %>
+
+        ✅ Aidé
+    </li>
+      <% } %>
+    </ul>
+    </div>
+
+  <% }) %>
+</section>
+</body>
+
+</html>
+
+
+

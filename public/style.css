@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Rubik", sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+        padding: 40px;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #4f46e5;
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 50px;
+    }
+
+    section {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+    }
+
+    /* Formulaire */
+        .sectionForm p {
+        font-size: 20px;
+        color: #373737;
+        font-family: "Cherry Bomb One", system-ui;
+  
+        
+    }
+    
+
+    p {
+        font-weight: bold;
+    }
+
+    #inputTxt,
+    #inputSelect {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        min-width: 180px;
+    }
+
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #4f46e5;
+        color: white;
+        border-radius: 8px;
+        display: inline-block;
+        width: fit-content;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: #3730a3;
+    }
+
+    /* Liste en attentee */
+    h2 {
+        margin-bottom: 15px;
+        color: #4f46e5;
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 30px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background-color: #f1f5f9;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    /* listes - admin */
+
+    .inputChekbox{
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+
+    .barrerTxt{
+        text-decoration: line-through;
+    }
+
+
+
+    /* LArgeurs */
+    .large-60{
+        width: 60%;
+    }
+
+
+    /* flex */
+    .flex{
+        display: flex;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .align-center{
+        align-items: center;
+    }
+
+    .gap-12{
+        gap: 12px;
+    }
+
+
+
+    /* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    /* Le formulaire passe en colonne */
+    .large-60 {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sectionForm p {
+        font-size: 18px;
+    }
+
+    #inputTxt,
+    #inputSelect,
+    select,
+    input {
+        width: 100%;
+        min-width: unset;
+    }
+
+    button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* gap plus petit sur mobile */
+    .gap-12 {
+        gap: 8px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ticketing-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Nico-ON-Web/ticketing-assignment#readme",
+  "bugs": {
+    "url": "https://github.com/Nico-ON-Web/ticketing-assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nico-ON-Web/ticketing-assignment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.106.0",
+    "dotenv": "^17.4.2",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1"
+  }
+}
