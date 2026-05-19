@@ -32,6 +32,7 @@ app.get('/', async (req, res) => {
     const { data, error } = await supabase
     .from('ticket')
     .select('*')
+    .eq("vu",false)
     .order('created_at', {
       ascending: true
     })
