@@ -58,9 +58,8 @@
         background-color: #4f46e5;
         color: white;
         border-radius: 8px;
-        display: inline-block;
+        display: block;
         width: fit-content;
-        margin-top: 20px;
     }
 
     button:hover {
@@ -158,6 +157,8 @@
         font-size: 18px;
     }
 
+    .sectionForm form{margin: auto; width: 90%;}
+
     #inputTxt,
     #inputSelect,
     select,
@@ -169,6 +170,7 @@
     button {
         width: 100%;
         text-align: center;
+        margin-top: 10px;
     }
 
     /* gap plus petit sur mobile */
